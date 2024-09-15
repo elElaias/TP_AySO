@@ -1,0 +1,87 @@
+history
+ls -la
+ssh-keygen
+cat $HOME/.ssh/*.pub
+mkdir repogit
+ls -la
+ls -la repogit/
+cd repogit/
+rm UTN-FRA_SO_onBording/
+cd UTN-FRA_SO_onBording/
+ls -la
+cd ..
+mkdir repogit1
+cd repogit1/
+git clone git@github.com:elElaias/TP_AySO.git
+ls -la
+cd TP_AySO/
+ls -la
+pwd
+ls -l
+cat /etc/os-release 
+man grep
+grep HOME_URL /etc/os-release 
+grep home_url /etc/os-release 
+man grep
+grep -i Home_url /etc/os-release 
+whoami
+echo "Usuario=$(whoami)" > datos_usuarios.txt
+cat datos_usuarios.txt 
+git add .
+git config --global user.email "eluas11183@gmail.com"
+git config --global user.name "elElaias"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" | tail -n1 | head -n1 >> datos_usuarios.txt 
+cat datos_usuarios.txt 
+vim datos_usuarios.txt 
+cat datos_usuarios.txt 
+grep "model name" /proc/cpuinfo | tail -n1 | head -n1 >> datos_usuarios.txt 
+cat datos_usuarios.txt 
+git add .
+git commit -m "feat: añadiendo informacion de cpu"
+man grep
+man sort
+cat grep "sort via a key" man grep
+man grep > test
+cat test
+grep "sort via a key" test 
+grep -i "sort via a key" test 
+rm test 
+man sort > test
+grep -i "sort via a key" test
+man grep
+rm test 
+ls -la
+man sort
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t: -k7 > lista_ordenada
+cat lista_ordenada 
+git add .
+git commit -m "ADD: listado de usuarios ordenada"
+echo -e "tcpdump/nman -k 'dump traffic'" > comando_dum_net
+cat comando_dum_net 
+rm comando_dum_net 
+ls -la
+nman -k "dump traffic"
+man -k "dump traffic"
+echo -e "Nombre: tcpdump" comando_dump_net
+echo -e "Nombre: tcpdump" >  comando_dump_net
+cat comando_dump_net 
+echo -e "Comando para busqueda: man -k 'dump traffic'" >> comando_dump_net 
+cat comando_dump_net 
+git add .
+git commit -m "ADD: comando para capturar y analizar el trafico de red"
+cat << END >> README.md 
+Alumno: Elias Fernandez
+Division: Div. 114
+Turno: Mañana
+END
+
+cat README.md 
+vim README.md 
+git add .
+git commit -m "docs: datos alumno agregados"
+ls $HOME/.bash_history
+ls -la $HOME/.bash_history
+cat $HOME/.bash_history
+history -a
